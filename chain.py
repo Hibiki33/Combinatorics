@@ -1,3 +1,7 @@
+'''
+Generate a Chain of length n
+'''
+
 import copy
 
 n = 5

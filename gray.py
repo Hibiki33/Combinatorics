@@ -1,3 +1,8 @@
+'''
+Generate a Gray code for a permutaion of length n,
+and use the Gray code to generate the permutaion of dictionary order
+'''
+
 n = 4
 
 

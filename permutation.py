@@ -1,3 +1,7 @@
+'''
+Generate a recyclable permutation
+'''
+
 n = 8
 
 perm = [[i, -1] for i in range(n)]

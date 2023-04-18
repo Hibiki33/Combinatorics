@@ -1,11 +1,15 @@
+'''
+Generate the corresponding permutation by inversion
+'''
+
 import random
 n = 8
 
-# inversion = []
-# for i in range(1, n + 1):
-# 	 inversion.append(random.randint(0, n - i))
+inversion = []
+for i in range(1, n + 1):
+	inversion.append(random.randint(0, n - i))
 
-inversion = [1, 3, 5, 4, 3, 2, 1, 0]
+# inversion = [1, 3, 5, 4, 3, 2, 1, 0]
 
 print(inversion)
 

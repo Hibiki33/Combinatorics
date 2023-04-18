@@ -29,6 +29,7 @@ import math
 n, m = map(int, input().split())
 p = 100000007
 
+# quick power algorithm (O(log2(n))) is used
 def power(x, y):  
     res = 1
     while y:
@@ -39,6 +40,8 @@ def power(x, y):
     return res
 
 if n >= m:
+    # Since it is faster to use the quick factorial algorithm (O(sqrt(n)log(n))) 
+    # when n is large, it is straightforward to use math.factorial()
     a = (math.factorial(n)) % p
     b = (power(math.factorial(m), (p - 2))) % p
     c = (power(math.factorial(n - m), (p - 2))) % p

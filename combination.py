@@ -47,4 +47,5 @@ if n >= m:
     c = (power(math.factorial(n - m), (p - 2))) % p
     print(a * b * c % p)
 else:
+    # if n < m, simply output 0
     print("0")

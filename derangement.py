@@ -11,6 +11,9 @@ n = int(input())
 d = 1
 
 for i in range(1, n + 1):
-    d = i * d + (-1)**i
+    if i & 1 == 1:
+        d = i * d - 1
+    else:
+        d = i * d + 1
 
 print(d)
